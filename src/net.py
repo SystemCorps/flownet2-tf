@@ -71,8 +71,8 @@ class Net(object):
             unique_name = 'flow-' + str(uuid.uuid4())
             if save_image:
                 flow_img = flow_to_image(pred_flow)
-                full_out_path = os.path.join(out_path, unique_name + '.png')
-                imsave(full_out_path, flow_img)
+                #full_out_path = os.path.join(out_path, unique_name + '.png')
+                imsave(out_path, flow_img)
 
             if save_flo:
                 full_out_path = os.path.join(out_path, unique_name + '.flo')

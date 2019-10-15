@@ -8,7 +8,7 @@ FLAGS = None
 
 def main():
     # Create a new network
-    net = FlowNet2(mode=Mode.TEST)
+    net = FlowNet2(mode=Mode.TEST, debug=True)
 
     # Train on the data
     net.test(
